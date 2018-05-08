@@ -1,0 +1,3 @@
+ <a class="lose" href="todo/show/<%= todo.id %>"><%= @win.lose %></a>
+ 
+ 

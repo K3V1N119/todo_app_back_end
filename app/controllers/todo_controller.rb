@@ -1,34 +1,43 @@
 class TodoController < ApplicationController 
     def index
-    @todos = Todo.all
+    @bikes = Bike.all
+    
     end
+
     def show
-    @todo = Todo.find_by_id(params[:id])
+    @bike = Bike.find_by_id(params[:id])  
     end
+    
     def new
     end
     def create
-    t = Todo.new
+    t = Bike.new
+    t.title = params['title']
+    t.image = params['image']
+    t.price = params['price']
     t.description = params['description']
-    t.pomodoro_estimate = params['pomodoro_estimate']
     t.save
     redirect_to "/todo/show/#{ t.id }"
     end
     def edit
-    @todo = Todo.find_by_id(params[:id])
+    @bike = Bike.find_by_id(params[:id])
     end
     def update
-    t = Todo.find_by_id(params['id'])
+    t = Bike.find_by_id(params[:id])
+    t.title = params['title']
+    t.image = params['image']
+    t.price = params['price']
     t.description = params['description']
-    t.pomodoro_estimate = params['pomodoro_estimate']
     t.save
     redirect_to "/todo/show/#{t.id}"
     end
     def destroy
-    t = Todo.find_by_id(params[:id])
+    t = Bike.find_by_id(params[:id])
     t.destroy
     redirect_to "/."
     end
+
+
 
 
 end

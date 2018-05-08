@@ -1,11 +1,17 @@
-<h3>Todo #<%= params[:id] %></h3>
-<h1>Workshop Todo List </h1>
+<head>
+ <link rel="stylesheet" type="text/css" href="Lit.css">
+ <title>Show</title>
+ 
+</head><body>
   
-<div class="card">
- <input type="checkbox" name=""/>
- <h2><%= @todo.description %></h2>
-<span class="pomodoro-estimate large-pomodoro-estimate"><%= @todo.pomodoro_estimate %> Pomodoros</span>
- <a href="/todo/edit/<%= @todo.id %>" class="button edit-todo-button">Edit</a>
- <a href="/todo/destroy/<%= @todo.id %>" class="button delete-todo-button">Delete</a>
- <a href="/" class="simple-link">Go back...</a>
-</div>
+<div class="card1">
+ <!--<input type="checkbox" name=""/>-->
+ <h1><%= @bike.title %></h1>
+ <div class="image">
+ <img class="dog" src="<%= @bike.image %>"></div><br>
+<span class="price">$<%= @bike.price %> </span>
+<a class="description"><%= @bike.description %></a><br>
+ <a class="show" href="/todo/edit/<%= @bike.id %>" class="button edit-todo-button">Edit</a>
+ <a class="show" href="/todo/destroy/<%= @bike.id %>" class="button delete-todo-button">Delete</a>
+ <a class="show" href="/" class="simple-link">Go back...</a>
+</div></body>

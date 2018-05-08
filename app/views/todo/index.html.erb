@@ -1,16 +1,26 @@
-<h1>Todo List</h1>
+<head>
+  <title>All</title>
+  <link rel="stylesheet" type="text/css" href="Lit.css">
+  
+  
+</head>
+<body><div class="main"><div id="logo"><%= image_tag "logo2.png"%></div> <div class="bike"><h1>Bicycle Parts</h1></div></div>
 
 <ul class="card">
-<% @todos.each do |todo| %>
   <li>
-    <input type="checkbox" name=""/>
-    <a href="todo/show/<%= todo.id %>"><%= todo.description %></a>
-    <span class="pomodoro-estimate small-pomodoro-estimate"><%= todo.pomodoro_estimate %></span>
+  <% @bikes.each do |bike| %>
+     <a class="title" href="todo/show/<%= bike.id %>"><%= bike.title %></a> 
+
+    <!--<input type="checkbox" name=""/>-->
+    <span class="price">$<%= bike.price %></span>
+    <img class="dog" src="<%= bike.image %>">
+    <% end %>
   </li>
-<% end %>
+
 </ul>
 
-<div id="new-todo-block">
-<a href="/todo/new" class="button add-new-todo-button" id="add-new-todo-button">Add a todo</a>
-</div>
 
+<div id="new-todo-block">
+<a href="/todo/new" class="button add-new-todo-button" id="add-new-todo-button">Add A New Article</a>
+</div>
+</body>

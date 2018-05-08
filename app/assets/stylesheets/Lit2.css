@@ -1,0 +1,59 @@
+
+a{
+  color:white;
+  text-decoration: none;
+  word-wrap: break-word;
+  font-size:50px;
+  margin:25px;
+
+}
+
+
+.show{
+  color:#FD3379;
+  
+  
+}
+.price{
+  font-size: 50px;
+}
+.description{
+  font-size: 50px;  
+  
+  
+}
+
+.title:hover{
+  color:#FD3379;
+  border-radius: 3px;
+}
+span{
+  font-size: 14px;
+  padding: 5px 10px 5px 10px;
+}
+.completed-todo{
+  text-decoration: line-through;
+}
+#new-todo-block{
+  width: 60%;
+  margin: 20px auto 0px auto;
+}
+#add-new-todo-button{
+  display: block;
+  background-color: #03A9F4;
+  margin-top: 10px;
+}
+
+
+
+h1{
+background-color:#1B1F23;
+color:#FD3379;
+padding-top:5px;
+padding-left:25px;
+padding-bottom:5px;
+font-size:55px;
+
+    
+}
+

@@ -1,0 +1,40 @@
+.new{
+    text-align:center;
+    
+    
+}
+.button{
+    text-align:center;
+    
+    
+}
+#add-new-todo-button{
+    display:inline;
+    
+}
+h2{
+    font-size:50px;
+    
+    
+    
+}
+input{
+    font-size:50px;
+    text-align:center;
+    margin:15px;
+    
+}
+form{
+    text-align:center;
+    
+}
+.description{
+    color:#1B1F23;
+    
+    
+}
+.card{
+  
+  background-color:#1B1F23;
+  color:white;
+}
